@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800&display=swap');
+
+@layer base {
+  html {
+    overflow-x: hidden;
+  }
+  
+  body {
+    @apply antialiased overflow-x-hidden;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  
+  .font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'IBM Plex Mono', monospace;
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 3s infinite linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+:root {
+  --color-navy: #0B1F3A;
+  --color-navy-dark: #091729;
+  --color-navy-light: #13293D;
+  --color-cyan: #00F6FF;
+  --color-gray: #E5E7EB;
+}
+
+.text-cyan {
+  color: var(--color-cyan);
+}
+
+.bg-navy {
+  background-color: var(--color-navy);
+}
+
+.bg-navy-dark {
+  background-color: var(--color-navy-dark);
+}
+
+.bg-navy-light {
+  background-color: var(--color-navy-light);
+}
+
+.text-navy {
+  color: var(--color-navy);
+}
+
+.border-cyan {
+  border-color: var(--color-cyan);
+}
+
+.bg-cyan {
+  background-color: var(--color-cyan);
+}
+
+.text-gray {
+  color: var(--color-gray);
+}
+
+/* Custom handle styles */
+.react-flow__handle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-cyan);
+}
+
+.react-flow__handle-connecting {
+  background-color: #ff0072;
+}
+
+.react-flow__handle-valid {
+  background-color: #43b883;
+}
+
+/* Custom edge path */
+.react-flow__edge-path {
+  stroke: var(--color-cyan);
+  stroke-width: 2;
+  filter: drop-shadow(0 0 5px rgba(0, 246, 255, 0.5));
+}
+
+/* Custom animations */
+@keyframes glowing {
+  0% { box-shadow: 0 0 5px rgba(0, 246, 255, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(0, 246, 255, 0.8); }
+  100% { box-shadow: 0 0 5px rgba(0, 246, 255, 0.5); }
+}
+
+.glow-effect {
+  animation: glowing 2s infinite;
+}
