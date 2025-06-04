@@ -281,7 +281,7 @@ const Contact: React.FC = () => {
                 href="mailto:contact@securedev.com"
                 className="text-cyan hover:underline"
               >
-                contact@securedev.com
+                adnan@securedevo.com
               </a>
             </div>
             
