@@ -478,7 +478,7 @@ const Hero: React.FC = () => {
                 } leading-tight`}
                 variants={itemVariants}
               >
-                Cybersecurity is <br />
+                Secure. Compliant. Resilient. <br />
                 <motion.span 
                   className="text-cyan relative inline-block"
                   initial={{ backgroundSize: '0% 100%' }}
@@ -490,14 +490,14 @@ const Hero: React.FC = () => {
                     backgroundPosition: 'left center',
                   }}
                 >
-                  Not Just a Skill.
+                Protecting your digital infrastructure from threats — before they happen
                 </motion.span> <br />
                 <motion.span
                   initial={{ opacity: 0 }}
                   animate={inView ? { opacity: 1 } : { opacity: 0 }}
                   transition={{ delay: 2, duration: 0.8 }}
                 >
-                  It's a <span className="text-yellow">Mindset</span>.
+                I help businesses safeguard their networks, systems, and sensitive data through end-to-end security services — <span className="text-yellow"> <br /> <i>from threat detection and vulnerability assessments to compliance audits and real-time monitoring.</i></span>.
                 </motion.span>
               </motion.h1>
               
